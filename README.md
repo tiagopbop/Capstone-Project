@@ -2,3 +2,5 @@
 
 You can view the compiled PDF here:  
 [📄PDF](./final.pdf)
+
+### Final Grade: 18
