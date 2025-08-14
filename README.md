@@ -3,6 +3,9 @@
 You can view the compiled PDF here:  
 [📄PDF](./final.pdf)
 
+Also check out the poster here:
+[📄Poster](./Poster.pdf)
+
 ### Developed by:
 - João Lamas (202208948)
 - Pedro Fernandes (202207987)
