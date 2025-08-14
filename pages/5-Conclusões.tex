@@ -1,0 +1,61 @@
+
+\section{Conclusions}
+
+
+	
+\subsection{Achieved results} 	
+
+\vspace{1em}
+\noindent \textbf{Comparative Analysis Implementation}: We conducted a comprehensive comparison between the VizML and KG4Vis approaches, analyzing their core methodologies, explainability mechanisms, extensibility capabilities, and technology requirements. This analysis provided clear insights into the fundamental differences between neural network-based and knowledge graph-based visualization recommendation systems.
+
+\vspace{1em}
+\noindent \textbf{Successful KG4Vis Implementation and Testing}: We successfully implemented and tested the KG4Vis model across multiple configurations, evaluating performance with different hidden dimensions (500-1000) and batch sizes (32 and 1024). Our tests revealed optimal performance at lower hidden dimensions (500-600), contrary to typical expectations, demonstrating the importance of empirical validation in model optimization.
+
+\vspace{1em}
+\noindent \textbf{Performance Metrics Analysis}: We established comprehensive evaluation metrics including Hits@2, Axis Accuracy, and Mean Rank to assess model performance. Configuration 2 achieved the best overall results with Hits@2 of 74.5\%, Axis Accuracy of 74.8\% and Mean Rank of 1.98 at hidden dimension 600, demonstrating effective visualization recommendation capabilities.
+
+\vspace{1em}
+\noindent \textbf{Scalability Insights}: We documented the computational scaling behavior of KG4Vis, finding linear relationships between hidden dimensions and training time ($m \approx 1.54$ for Configuration 1, and varying relationships for Configuration 2), providing valuable insights for resource planning and model deployment.
+
+\vspace{1em}
+\noindent \textbf{Technical Documentation}: We created a complete technical implementation guide covering dataset pre-processing, feature extraction, model training pipelines, and evaluation procedures, contributing to the reproducibility of knowledge graph-based visualization recommendation research.
+
+\vspace{1em}
+\noindent \textbf{Limitations and Challenges Identification}: We identified and documented technical challenges encountered with VizML implementation, providing valuable lessons for future research and highlighting the importance of robust implementation frameworks in machine learning research.
+
+\vspace{1em}
+\noindent These results directly address our stated objectives of analyzing both approaches, understanding their computational requirements, and successfully implementing at least one working model for performance evaluation.
+
+\subsection{Lessons learned} 	
+
+\vspace{1em}
+\noindent \textbf{Model Complexity vs. Performance Trade-Offs}: Contrary to conventional wisdom that larger models perform better, our experiments revealed that lower hidden dimensions (500-600) consistently outperformed higher dimensions (800-1000). This taught us the importance of empirical validation over theoretical assumptions and highlighted that the optimal model capacity depends heavily on the characteristics of the dataset and computational constraints.
+
+\vspace{1em}
+\noindent \textbf{Hardware Limitations Impact on Research}: Working within WSL environment constraints (limited to 15GB RAM) and varying hardware configurations (CUDA vs. CPU-only) demonstrated how computational resources directly influence research scope and methodology. We learned to adapt experimental designs to hardware limitations while maintaining scientific rigor.
+
+\vspace{1em}
+\noindent \textbf{Implementation Challenges in Academic Research}: Our difficulties with VizML implementation highlighted the critical importance of code reproducibility and documentation in academic research. Missing components and system-level issues taught us that even well-documented papers may have implementation gaps that require significant troubleshooting skills.
+
+\vspace{1em}
+\noindent \textbf{Explainability vs. Performance Balance}: Through comparing VizML's black-box approach with KG4Vis's interpretable knowledge graphs, we learned that the choice between explainability and raw performance depends on the application context. This reinforced the importance of considering the end-user requirements when selecting machine learning approaches.
+
+\vspace{1em}
+\noindent \textbf{Iterative Development and Adaptation}: When faced with technical roadblocks with VizML, our decision to focus entirely on KG4Vis taught us the value of strategic pivoting in research projects. Sometimes redirecting efforts toward achievable goals yields more valuable results than persisting with problematic implementations.
+
+\vspace{1em}
+\noindent \textbf{Collaborative Research Skills}: Working in a four-person team across different phases (research, implementation, analysis, documentation) enhanced our ability to distribute work effectively, coordinate parallel efforts, and integrate diverse contributions into a cohesive final product.
+
+\vspace{1em}
+\noindent These lessons will prove invaluable in future research endeavors, particularly in understanding the practical challenges of implementing and evaluating machine learning systems in academic and professional settings.	
+
+\vspace{2.0cm}
+\subsection{Future work} 
+ 
+Future work could explore several directions to build on this project. One promising avenue would be developing a \textbf{hybrid system} that combines VizML's fast neural network predictions with KG4Vis' explainable knowledge graph approach, potentially offering both speed, transparency, and explainability. 
+
+While VizML’s final results are recommended charts based on data characteristics, the ultimate choice still relies on human judgment. Future iterations could leverage AI to further refine recommendations by analyzing contextual factors, such as the user’s analytical goal, audience, or dataset nuances to suggest the most effective chart for a specific situation, reducing ambiguity in decision-making.
+
+\textbf{Resolving the technical challenges} that prevented VizML's full implementation remains important to enable a proper comparison between the two methods. 
+
+The KG4Vis system could be enhanced by experimenting with more \textbf{advanced knowledge graph embedding techniques} or incorporating reinforcement learning could improve adaptability by allowing dynamic updates to the graph based on user feedback or new data trends.

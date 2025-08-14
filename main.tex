@@ -1,0 +1,107 @@
+
+
+\documentclass[10pt]{article}
+\usepackage[english]{babel}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{needspace}
+\usepackage{caption}
+\usepackage{listings}
+\usepackage{url}
+\usepackage{fancyhdr}
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  columns=fullflexible
+}
+
+% Pasta para as vossas imagens.
+\graphicspath{ {./figures/} }
+
+
+\begin{document}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{VizML x KG4Vis }
+\fancyhead[R]{L.EIC 2025/26}
+\fancyfoot[C]{\thepage }
+
+\begin{titlepage}
+	\begin{center}
+		\vspace*{1cm}
+		
+		%PREENCHER
+    {\fontsize{20.74}{16}\selectfont \textbf{VizML x KG4Vis}}
+     
+		
+		\vspace{0.5cm}
+		Final Report of the Capstone Project
+		
+		\vspace{1.5cm}
+		
+		%PREENCHER
+		\textbf{João Miguel Peixoto Lamas }\\
+		\textbf{Pedro Afonso Nunes Fernandes}\\ %se aplicavel
+		\textbf{Tiago de Pinho Bastos de Oliveira Pinheiro	}\\ %se aplicavel
+		\textbf{Tiago Grilo Ribeiro Rocha	}\\ %se aplicavel
+		
+		\vfill
+		% Incluir uma imagem. 
+		\includegraphics[width=0.6\textwidth]{UPORTO_fundotransparente}
+		
+		\vfill
+		
+	
+		
+		Bachelor in Informatics and Computer Engineering
+		
+		\vspace{0.8cm}
+		
+		%PREENCHER
+		\textbf{Supervised by}: Alexandre Miguel Barbosa Valle de Carvalho	\\
+
+\vspace{0.4cm}
+		%PREENCHER
+		June 27, 2025
+		
+	\end{center}
+\end{titlepage}
+
+
+\thispagestyle{empty} 
+\clearpage
+
+\thispagestyle{empty}
+\tableofcontents
+\thispagestyle{empty}
+
+ \clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%					  Adicionar aqui abaixo as vossas páginas!                          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Para incluirem um ficheiro, façam o seguinte:
+% \include{pages/X-AAAA.tex}
+% Onde X é o número da vossa secção e AAAA é uma descrição do que tem lá dentro.
+\include{pages/1-Glossary.tex}
+\include{pages/2-Introdução.tex}
+\include{pages/3-Metodologia.tex}
+\include{pages/4-Desenvolvimento.tex}
+\include{pages/5-Conclusões.tex}
+\include{pages/6-appendix.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%					  Adicionar aqui acima as vossas páginas!                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\nocite{*} % This shows all references even if not cited
+\bibliographystyle{plain} 
+\bibliography{references} % Entries are in the references.bib file
+
+ 
+\end{document}

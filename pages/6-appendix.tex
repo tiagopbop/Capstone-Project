@@ -1,0 +1,79 @@
+\section{Appendix}
+
+\subsection{Log of the meetings}
+
+The project activities were carried out over several weeks with the following key milestones:
+
+\begin{itemize}
+\item \textbf{First Meeting (13/02/25)}: Initial discussion of the VizML paper and verification of the dataset.
+
+\item \textbf{Second Meeting (20/02/25)}: Analysis of the VizML and KG4Vis papers, making explanatory diagrams for each one, dataset characterization, and proceed to do the software installation.
+
+\item \textbf{Third Meeting (27/02/25)}: Exploration of neural network training and embedding learning, start running the dataset.
+
+\item \textbf{Fourth Meeting (06/03/25)}: Deep dive into scalability challenges, computational costs, and model training preparation.
+
+\item \textbf{Fifth Meeting (13/03/25)}: Researched graph storage methods, explored training tech, calculated computational costs, corrected prior errors, detailed VizML-KG4Vis pipeline, added references, prepared dataset scripts, and initiated report development.
+
+\item \textbf{Sixth Meeting (20/03/25)}: Dove deeper into the code, analyzed neural network topology and deep learning model, explored Torch variables and data loaders, implemented simple classifiers, documented dataset file types and execution, and reviewed the report structure.
+
+\item \textbf{Seventh Meeting (03/04/25)}: Filled initial report sections, refined index by removing redundant terms (e.g., "overview"), restructured to prioritize "Concepts" first. Added comparative analysis of papers/code (performance/scalability post-execution), included metrics (accuracy, precision), and pre/post-execution comparisons. Concluded with work distribution.
+
+\item \textbf{Eighth Meeting (08/04/25)}: Restructured report to discuss approach before dataset, reordered sections (3.3 before 3.9 unless intermediate chapters reference it), added centered image captions. For code, explored applying the functions with the use of AI. Documented issues with functions, noting attempted fixes with a disclaimer about potential deviations from authors' intent.
+
+\item \textbf{Ninth Meeting (24/04/25)}: After multiple attempts to adjust parameters and test VizML, we concluded it wasn't yielding meaningful results, so we decided to shift focus. Instead, we ran the original KG4Viz code as implemented by the authors.
+
+\item \textbf{Tenth Meeting (07/05/25)}: Filled Missing report Topics and tried testing KG4Vis code for different dimensions changing some testing parameters (inferior batch size , hidden dimension)
+
+\item \textbf{Eleventh Meeting (15/05/25) onwards}: Result analysis of different configurations and report writing.
+
+
+
+\end{itemize}
+
+\subsection{Command List}
+
+\textbf{1. Clone the repository:}
+
+Run:
+\begin{lstlisting}
+git clone https://github.com/KG4VIS/Knowledge-Graph-4-VIS-Recommendation
+\end{lstlisting}
+
+Or download the source code directly from \url{https://github.com/KG4VIS/Knowledge-Graph-4-VIS-Recommendation}
+
+\vspace{1em}
+\textbf{2. Install Python 3.7.9}
+
+Ensure the system uses Python 3.7.9 (other versions may cause compatibility issues).
+
+\vspace{1em}
+\textbf{3. (Optional) Install CUDA}
+
+If supported, install CUDA on the system (NVIDIA GPU required). Otherwise, proceed with CPU-only PyTorch installation.
+
+\vspace{1em}
+\textbf{4. Install the required packages:}
+
+Run:
+\begin{lstlisting}
+pip install scikit-learn==0.21.0 numpy==1.16.3 editdistance==0.5.3 pandas==0.24.2 tqdm==4.66.4
+\end{lstlisting}
+
+If using CUDA:
+\begin{lstlisting}
+pip install torch==1.7.0+cu110 torchvision==0.8.1+cu110 torchaudio==0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
+\end{lstlisting}
+
+Otherwise (CPU-only):
+\begin{lstlisting}
+pip install torch==1.7.0 torchvision==0.8.1 torchaudio==0.7.0
+\end{lstlisting}
+
+\vspace{1em}
+\textbf{5. Dataset download and code execution:}
+
+Follow the instructions in the README file of the repository to download the dataset (and possibly features), run the code, and tune training parameters.
+
+
+
